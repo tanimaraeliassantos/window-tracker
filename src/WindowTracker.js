@@ -12,7 +12,7 @@ export default function WindowTracker() {
 
     return function () {
       console.log("Cleaning up");
-      window.removeEventListener("resize, watchWidth");
+      window.removeEventListener("resize", watchWidth);
     };
   }, []);
   return <h1>Window width: {windowWidth}</h1>;
